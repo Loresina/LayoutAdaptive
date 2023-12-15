@@ -1,0 +1,35 @@
+$wrap: 1920px;
+// $container: 1230px;
+$marg: 0 auto;
+
+$white: #FFFFFF;
+$grey-dark: #010E10;
+$green-blue: #17868D;
+$grey-light: #3D3D3D;
+$gold: #F0D683;
+$black: #000000;
+$grey-medium: #1C1C1C;
+
+
+body {
+    background: $grey-medium;
+    // font-family: $os;
+    color: $white;
+    // font-size: $text;
+  }
+
+.wrapper {
+    max-width: $wrap;
+    margin: $marg;
+  }
+
+  h1 {
+    color: $white;
+}
+
+.section {
+    position: relative;
+    margin: auto;
+    width: 1440px;
+    background: $grey-light;
+}

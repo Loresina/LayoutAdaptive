@@ -1,0 +1,22 @@
+body {
+  background: #1C1C1C;
+  color: #FFFFFF;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+
+.section {
+  position: relative;
+  margin: auto;
+  width: 1440px;
+  background: #3D3D3D;
+}
+
+/*# sourceMappingURL=styles.css.map */
