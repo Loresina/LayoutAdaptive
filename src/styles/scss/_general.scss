@@ -1,35 +1,108 @@
 $wrap: 1920px;
-// $container: 1230px;
+$container: 1530px;
 $marg: 0 auto;
-
-$white: #FFFFFF;
+$white: #FFF;
 $grey-dark: #010E10;
 $green-blue: #17868D;
 $grey-light: #3D3D3D;
 $gold: #F0D683;
-$black: #000000;
+$gold-dark: #9F734C;
+$black: #010E0F;
 $grey-medium: #1C1C1C;
+$grey-super-light: #767676;
+$title-font: 'Oranienbaum', serif;
+$main-font: 'Noto Sans', sans-serif;
+$text: 14px;
+$line-height: 1.3;
 
+@mixin flex($jc, $ai) {
+  display: flex;
+  flex-wrap: wrap;
+
+  // flex-direction: row;
+  justify-content: $jc;
+  align-items: $ai;
+}
 
 body {
     background: $grey-medium;
-    // font-family: $os;
+    font-family: $main-font;
     color: $white;
-    // font-size: $text;
+    font-size: $text;
+    line-height: $line-height;
   }
 
+h1 {
+  font-family: $title-font;
+  font-weight: normal;
+  font-size: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+
+    &::first-line {
+    color: $gold;
+  }
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: $line-height;
+  text-align: center;
+
+  & > span {
+    font-weight: bold;
+    color: $gold;
+  }
+}
+
 .wrapper {
+    position: relative;
+    top: -3px;
+    left: 5px;
     max-width: $wrap;
     margin: $marg;
   }
 
-  h1 {
-    color: $white;
+.container {
+  position: relative;
+  padding: 25px 15px;
+  max-width: $container;
+  margin: auto;
+
+  // outline: 1px solid purple;
 }
 
-.section {
-    position: relative;
-    margin: auto;
-    width: 1440px;
-    background: $grey-light;
-}
+
+// /* Базовые стили */
+
+// /* Большие экраны (2560 × 1332 и выше) */
+// @media screen and (min-width: 2560px) {
+//   /* Дополнительные стили для экранов шириной 2560px и более */
+// }
+
+// /* Экраны среднего размера (1680 × 939 - 1680 × 789) */
+// @media screen and (max-width: 1680px) {
+//   /* Дополнительные стили для экранов шириной до 1680px */
+// }
+
+// /* Другие брейкпоинты, по аналогии */
+
+// /* 1600 × 789 */
+// @media screen and (max-width: 1600px) {
+//   /* Стили для экранов шириной до 1600px */
+// }
+
+// /* 1536 × 753 */
+// @media screen and (max-width: 1536px) {
+//   /* Стили для экранов шириной до 1536px */
+// }
+
+// /* ... и так далее */
+
+// /* Мобильные устройства (360 × 616 и ниже) */
+// @media screen and (max-width: 360px) {
+//   /* Стили для мобильных устройств с шириной экрана до 360px */
+// }

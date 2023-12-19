@@ -1,0 +1,80 @@
+.header {
+    background: $black;
+}
+
+.header-content {
+    max-width: 100%;
+
+    @include flex(space-between, flex-start);
+    flex-wrap: nowrap;
+}
+
+.header-content-logo {
+    @include flex(space-between, flex-end);
+    width: 423px;
+    color: $gold;
+    
+}
+
+.header-content-contacts {
+    @include flex(space-between, center);
+    position: relative;
+    width: 647px;
+
+    // gap: 11,4%;
+    // color: $gold;
+    
+    & a {
+        cursor: pointer;
+        color: $gold;
+        text-decoration: underline;
+        text-underline-offset: 40%;
+        text-decoration-style: dashed;
+    }
+}
+
+.header-content-buttons {
+    @include flex(space-between, center);
+    width: 160px;
+
+    // gap: 12%;
+}
+
+.header-content-button {
+    @include flex(center, center);
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, $grey-light 20%, $grey-dark 100%);
+    border: none;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 2px; /* Расстояние от внешнего края сверху */ /* Расстояние от внешнего края слева */ /* Расстояние от внешнего края справа */ /* Расстояние от внешнего края снизу */
+        border: 1px solid $gold-dark; /* Цвет и толщина обводки */
+        border-radius: 7px;
+      }
+}
+
+.header-contacts-mail {
+    line-height: 1.4;
+
+    &::first-line {
+        color: $grey-super-light        
+    }
+}
+
+.header-contacts-phone {
+    text-align: right;
+    
+    &::first-line {
+        font-family: $title-font;
+        color: $white;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.05em;
+    }
+}

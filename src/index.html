@@ -3,15 +3,258 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles/styles.css">
+
   <title>Layout fluid</title>
-  <!-- <link rel="stylesheet" href="./styles/app"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/styles.css">
+  
 </head>
 <body>
   <div class="wrapper">
-    <section class="section">
-      <h1>Hello World!</h1>
-    </section>
+    <section class="header" id="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="header-content-logo">
+            <img src="./img/logo.svg" alt="logo">
+            <span>Индивидуальные
+              <br>мебельные туры в Китай для
+              <br>частных клиентов и бизнеса
+            </span>
+          </div>
+  
+          <nav class="header-content-contacts">
+            <div class="header-contacts-mail">
+              <span>E-mail:
+                <br><a href="mailto:rosexpress-msk@yandex.ru">rosexpress-msk@yandex.ru</a>
+              </span>
+              
+            </div>
+  
+            <div class="header-content-buttons" >
+              <button class="header-content-button">
+                <img src="./img/you.svg">
+              </button>
+  
+              <button class="header-content-button">
+                <img src="./img/tg.svg">
+              </button>
+  
+              <button class="header-content-button">
+                <img src="./img/vk.svg">
+              </button>           
+            </div>
+  
+            <div class="header-contacts-phone">
+              <span>8 (800) 333-89-01
+                <br><a href="tel:+88003338901">Обратный звонок</a>
+              </span>      
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </section> <!-- end header -->
+
+    <section class="home" id="home">
+      <img src="./img/lamp.svg">  
+      
+      <div class="container">
+        <div class="home-main">
+          <div class="home-titles">
+            <h1>
+              Мебельные туры
+              <br>
+              с полным сопровождением
+            </h1>
+            <h2>
+              <span>Экономия до 500%</span> по сравнению
+              <br>
+              с заказами из Европы и РФ
+            </h2>
+          </div>
+  
+          <div class="home-banners">
+            <div class="show-more">
+              <button>
+                <img src="./img/you_black.svg">
+              </button>
+              <span>
+                <span>Узнайте
+                <br>больше</span> о туре
+                <br>за 1 минуту
+              </span>
+            </div>
+  
+            <div class="home-booking">
+              <div class="home-booking-info">
+                <button>
+                  <span>
+                    забронировать тур
+                  </span>
+                </button>
+      
+                <span>
+                  Выбирайте для себя лучшее.
+                  <br>Отправляйтесь в невероятное мебельное
+                  <br>путешествие в Китай с нами!
+                </span>
+              </div>
+    
+              <img src="./img/arrow-left 1.svg">           
+            </div>
+  
+            <div class="banner-info">
+                <span>
+                  Собственная ТК –
+                  <br>несём полную
+                  <br>ответственность
+                </span>
+                  
+                <span>
+                  Лично убедитесь
+                  <br>в качестве мебели
+                </span>
+            </div>
+          </div>
+
+        </div>
+       
+
+        <div class="pictures">
+          <img src="./img/sofa.svg">
+        </div>
+
+        <div class="home-info">
+          <div>
+            <span>
+              15+
+            </span>
+  
+            <span>
+              лет опыта в
+              мебельных турах
+            </span>          
+          </div>
+  
+          <div>
+            <span>
+              700+
+            </span>
+  
+            <span>
+              доставленных
+              контейнеров
+            </span>          
+          </div>
+  
+          <div>
+            <span>
+              2+
+            </span>
+  
+            <span>
+              млрд руб. сэкономили
+              клиентам на покупке
+              мебели
+            </span>          
+          </div>
+  
+          <div>
+            <span>
+              15
+            </span>
+  
+            <span>
+              опытных сотрудников
+              в России
+            </span>          
+          </div>
+  
+          <div>
+            <span>
+              10
+            </span>
+  
+            <span>
+              штатных сотрудников
+              в Китае
+            </span>          
+          </div>
+        </div>
+
+      </div> <!-- end container -->
+    </section> <!-- end home -->
+  
+
+  <!-- <section class="about" id="about">
+    <div class="container">
+      <h1>
+        95% магазинов заказывают мебель из Китая и не только в России, но весь остальной мир!
+      </h1>
+  
+      <div>
+  
+        <div>
+          <span>
+            Онлайн покупка мебели из РФ,
+            Европы и Китая
+          <span>
+          <ul>
+            <li>Ограниченный выбор на сайтах. Большинство фабрик РФ предлагает 5-10 стандартных однообразных моделей.</li>
+            <li>Нельзя оценить заранее качество изделий и материалов.</li>
+            <li>Большой риск получить мебель, не соответствующую ожиданиям.</li>
+            <li>Приходится слепо доверять отзывам о производителе или посреднике.</li>
+            <li>Необходимо заказывать мебель, сантехнику и свет из разных магазинов и переплачивать за доставку.</li>
+            <li>Известные и надежные европейские бренды на сегодняшний день недоступны к прямому заказу из РФ.</li>
+            <li>Переплата от 30 до 60% если вы покупаете у дистрибьютора, а не у производителя напрямую.</li>
+          </ul>
+        </div>
+  
+        <div>
+          <span>
+            Мебельный тур в Китай с
+            РосЭкспресс
+          <span>
+          <ul>
+            <li>Прямой доступ к фабрикам-производителям и тысячам вариантов качественной мебели.</li>
+            <li>Доступ к эксклюзивным коллекциям мебели, не выставленным на продажу онлайн.</li>
+            <li>Вы лично удостоверитесь в высоком качестве: оцените материалы и рассмотрите каждую деталь.</li>
+            <li>Проверите мебель в реальных условиях. Сможете сесть на стулья, раскрыть ящики комода, разложить диван.</li>
+            <li>Купите в ходе тура всё необходимое для комплектации интерьера под ключ.</li>
+            <li>Погрузитесь в атмосферу, традиции и уникальную культуру Китая.</li>
+            <li>Покупка напрямую от фабрики = экономия в 2-5 раз. Без посредников и скрытых расходов. Чем больше объём мебели в вашем заказе, тем больше ваша выгода!</li>                   
+          </ul>
+        </div>
+  
+      </div>
+  
+      <div>
+        <img src="./img/sofa1.png">
+        <img src="./img/sofa2.png"> 
+      <div>
+
+      <div>
+        <span>
+          Нужна помощь специалиста?
+          Задайте свой вопрос
+        </span>
+        <div>
+          <button>
+            <img src="./img/tg.svg">
+          </button>
+
+          <button>
+            <img src="./img/vk.svg">
+          </button>
+        </div>
+      </div>
+    </div> 
+  </section>   -->
     
   </div>   <!-- end wrapper -->
 
