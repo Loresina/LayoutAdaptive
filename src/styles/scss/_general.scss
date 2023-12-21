@@ -32,6 +32,12 @@ body {
     line-height: $line-height;
   }
 
+p {
+  color: palevioletred;
+  text-decoration: overline;
+  display: none;
+}
+
 h1 {
   font-family: $title-font;
   font-weight: normal;
