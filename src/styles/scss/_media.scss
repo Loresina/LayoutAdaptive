@@ -1,0 +1,349 @@
+@media(width <= 1630px) {
+  .home > img {
+    width: 50vw;
+  }
+
+
+  .home-info {
+      height: 230px ;
+      padding: 90px 0 60px 15px;
+      bottom: -110px;    
+  }
+
+  .home-info-list {
+    gap: 0;
+ 
+   & li {
+      white-space: normal;
+     font-size: 16px;
+   }
+ 
+   & span {
+     font-size: 60px;
+   }
+ }
+
+ .home-sofa {
+  top: -165px;
+}
+
+}
+
+
+@media(width <= 1450px) {
+  .container {
+    max-width: 85%;
+
+  }
+
+
+  .home-sofa {
+    top: -165px;
+
+    & img {
+      width: 100%;
+  }
+  }  
+
+.home-info {
+  height: 220px;
+  bottom: -100px;
+
+  // background: red;
+  padding: 80px 0 64px 15px;
+}
+
+.home-info-list {
+gap: 0.7em;
+
+& li {
+ font-size: 16px;
+}
+
+& span {
+ font-size: 65px;
+}
+}
+
+}
+
+
+@media(width <= 1330px) {
+  .home-main {
+    top: 30px;
+  }
+
+  .header-content-contacts {
+      max-width: 530px;
+    }
+
+
+  .home-info {
+    height: 200px;
+    bottom: -110px;
+
+    // background: yellow;
+    padding: 75px 0 64px 15px;
+  }
+   
+  .header-content-logo {
+    & img {
+      width: 20vh;
+    }
+
+    & span {
+      font-size: 12px;
+    }
+}
+
+.header-contacts-mail, .header-contacts-phone {
+  font-size: 12px;
+}
+
+.header-contacts-phone {
+  &::first-line {
+    font-size: 18px;
+  }
+  
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+
+.show-more {
+  align-items: center;
+  flex-direction: column;
+  width: 18%;
+  padding: 1.25%;
+  gap: 10px;
+
+  & a {
+    height: 7vh;
+    width: 7vh;
+}
+
+}
+
+.show-more-title {
+  font-size: 14px;
+  text-align: center;
+}
+
+
+.home-booking {
+  left: 1.5%;
+
+
+  & img {
+    height: 12vh;
+
+  }
+}
+
+.banner-info {
+  max-width: 240px;
+  height: 300px;
+
+  & > span {
+      font-size: 16px;
+      top: 30px;
+      padding-top: 20px;
+  }
+
+}
+
+.home-booking-info button {
+  width: 245px;
+  height: 60px;
+  padding: 20px 37px;
+  
+  & span {
+      font-size: 18px;
+  }
+}
+
+.home-sofa {
+  top: -110px;
+}
+
+}
+
+
+  @media(width <= 1120px) {
+    .home-main {
+      top: 25px;
+    }
+
+    .header-content-logo {
+      & img {
+        width: 16vh;
+      }
+  
+      // & span {
+      //   display: none;
+      // }
+  }
+
+  .header-contacts-mail, .header-contacts-phone {
+    display: none;
+  }
+
+  .header-content-contacts {
+    @include flex(flex-end, center);
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+
+  .show-more {
+    width: 18%;
+    padding: 1.25%;
+    gap: 10px;
+  
+    & a {
+      height: 6vh;
+      width: 6vh;
+
+      & img {
+        width: 3.5vh;
+      }
+  }
+  
+  }
+  
+  .show-more-title {
+    font-size: 12px;
+  }
+  
+  .banner-info {
+    max-width: 200px;
+    height: 280px;
+  
+    & > span {
+        font-size: 14px;
+        top: 20px;
+        padding-top: 20px;
+    }
+  
+  }
+  
+  .home-booking-info button {
+    width: 220px;
+    height: 55px;
+    padding: 10px;
+    
+    & span {
+        font-size: 16px;
+    }
+  }
+
+
+.home-info {
+  height: 180px;
+  bottom: -80px;
+  padding: 60px 10px 64px 22px;
+
+  // background: purple;
+}
+
+.home-info-list {
+gap: 1em;
+
+& li {
+  max-width: 170px;
+ font-size: 14px;
+}
+
+& span {
+ font-size: 50px;
+}
+}
+  }
+
+
+  @media(width <= 960px) {
+    .home-main {
+      top: 15px;
+    }
+
+    .home-titles {
+      gap: 15px;
+    }
+
+    .container {
+      max-width: 90%;
+    }
+
+    .home-info {
+      height: 170px;
+
+      // top: 590px;
+      padding: 60px 5px 64px 20px;
+    }
+    
+    .home-info-list {
+    gap: 0.7em;
+    
+    & li {
+    // max-width: 160px;
+     font-size: 12px;
+    }
+    
+    & span {
+     font-size: 45px;
+     margin-bottom: 25px;
+    }
+    }
+
+    .home-booking {
+      top: 20px;
+      left: 3%;
+  
+      & img {
+          display: none;
+      }
+  }
+
+  .home-booking-info button {
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+    
+    & span {
+        font-size: 16px;
+    }
+  }
+
+  .banner-info {
+    max-width: 180px;
+    height: 260px;
+  
+    & > span {
+        font-size: 14px;
+        top: 20px;
+        padding-top: 15px;
+    }
+
+  }
+
+  .home-info {
+    bottom: -60px;
+
+  }
+  }
+
+  @media(width <= 750px) {
+    
+  }

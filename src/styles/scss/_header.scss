@@ -11,15 +11,19 @@
 
 .header-content-logo {
     @include flex(space-between, flex-end);
-    width: 423px;
+    flex-wrap: nowrap;
+
+    // max-width: 423px;
+    gap: 25px;
     color: $gold;
-    
 }
 
 .header-content-contacts {
     @include flex(space-between, center);
     position: relative;
     width: 647px;
+
+    // width: 43%;
 
     // gap: 11,4%;
     // color: $gold;

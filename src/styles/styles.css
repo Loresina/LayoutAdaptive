@@ -34,7 +34,6 @@ h2 > span {
 .wrapper {
   position: relative;
   top: -3px;
-  left: 5px;
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -42,7 +41,7 @@ h2 > span {
 .container {
   position: relative;
   padding: 25px 15px;
-  max-width: 1530px;
+  max-width: 80.3%;
   margin: auto;
 }
 
@@ -58,12 +57,17 @@ ul {
   list-style: none;
 }
 
+li {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
 
 .home {
-  height: 1110px;
   position: relative;
   width: 100%;
 }
@@ -95,6 +99,7 @@ a {
   flex-direction: column;
   position: relative;
   top: 51px;
+  bottom: -125px;
 }
 .home-main h1 {
   position: relative;
@@ -125,13 +130,13 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 26px;
+  padding: 26px 13px 26px 26px;
   width: 260px;
   background: linear-gradient(360deg, #17868D 20%, #1C1C1C 100%);
   border-radius: 15px;
   gap: 20px;
 }
-.show-more button {
+.show-more a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -143,10 +148,13 @@ a {
   border: 2px solid #F0D683;
   cursor: pointer;
 }
-.show-more span {
+
+.show-more-title {
+  display: block;
   font-size: 16px;
+  max-width: 129px;
 }
-.show-more span:first-child {
+.show-more-title span {
   font-weight: bold;
 }
 
@@ -245,54 +253,55 @@ a {
   letter-spacing: 0.05em;
 }
 
-.pictures {
-  position: absolute;
+.home-sofa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
   z-index: 2;
-  top: 525px;
+  top: -155px;
 }
 
 .home-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
   position: absolute;
-  top: 950px;
+  height: 274px;
+  bottom: -150px;
   width: 98%;
   background: #010E0F;
   border-radius: 41px;
-  padding: 50px;
+  padding: 94.5px 15.5px 64px 51.5px;
 }
-.home-info::after {
+.home-info::before {
   content: "";
   position: absolute;
   inset: 10px;
   border: 2px solid #F0D683;
-  border-radius: 40px;
+  border-radius: 35px;
 }
-.home-info div {
+
+.home-info-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  max-width: 223px;
-  gap: 5%;
-}
-.home-info > div > span:first-child {
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 98%;
   text-align: center;
+  flex-wrap: nowrap;
+}
+.home-info-list li {
+  max-width: 223px;
+  font-size: 20px;
+}
+.home-info-list span {
+  display: block;
   font-family: "Oranienbaum", serif;
   font-size: 80px;
-  line-height: 96px;
-  line-height: 1.2;
+  line-height: 1.2px;
   letter-spacing: 0.05em;
   color: #F0D683;
-}
-.home-info > div > span:nth-child(2) {
-  text-align: center;
-  font-size: 20px;
-  position: relative;
-  top: -0.5em;
+  margin-bottom: 42px;
 }
 
 .header {
@@ -313,7 +322,8 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
-  width: 423px;
+  flex-wrap: nowrap;
+  gap: 25px;
   color: #F0D683;
 }
 
@@ -378,6 +388,250 @@ a {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.05em;
+}
+
+@media (width <= 1630px) {
+  .home > img {
+    width: 50vw;
+  }
+  .home-info {
+    height: 230px;
+    padding: 90px 0 60px 15px;
+    bottom: -110px;
+  }
+  .home-info-list {
+    gap: 0;
+  }
+  .home-info-list li {
+    white-space: normal;
+    font-size: 16px;
+  }
+  .home-info-list span {
+    font-size: 60px;
+  }
+  .home-sofa {
+    top: -165px;
+  }
+}
+@media (width <= 1450px) {
+  .container {
+    max-width: 85%;
+  }
+  .home-sofa {
+    top: -165px;
+  }
+  .home-sofa img {
+    width: 100%;
+  }
+  .home-info {
+    height: 220px;
+    bottom: -100px;
+    padding: 80px 0 64px 15px;
+  }
+  .home-info-list {
+    gap: 0.7em;
+  }
+  .home-info-list li {
+    font-size: 16px;
+  }
+  .home-info-list span {
+    font-size: 65px;
+  }
+}
+@media (width <= 1330px) {
+  .home-main {
+    top: 30px;
+  }
+  .header-content-contacts {
+    max-width: 530px;
+  }
+  .home-info {
+    height: 200px;
+    bottom: -110px;
+    padding: 75px 0 64px 15px;
+  }
+  .header-content-logo img {
+    width: 20vh;
+  }
+  .header-content-logo span {
+    font-size: 12px;
+  }
+  .header-contacts-mail, .header-contacts-phone {
+    font-size: 12px;
+  }
+  .header-contacts-phone::first-line {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .show-more {
+    align-items: center;
+    flex-direction: column;
+    width: 18%;
+    padding: 1.25%;
+    gap: 10px;
+  }
+  .show-more a {
+    height: 7vh;
+    width: 7vh;
+  }
+  .show-more-title {
+    font-size: 14px;
+    text-align: center;
+  }
+  .home-booking {
+    left: 1.5%;
+  }
+  .home-booking img {
+    height: 12vh;
+  }
+  .banner-info {
+    max-width: 240px;
+    height: 300px;
+  }
+  .banner-info > span {
+    font-size: 16px;
+    top: 30px;
+    padding-top: 20px;
+  }
+  .home-booking-info button {
+    width: 245px;
+    height: 60px;
+    padding: 20px 37px;
+  }
+  .home-booking-info button span {
+    font-size: 18px;
+  }
+  .home-sofa {
+    top: -110px;
+  }
+}
+@media (width <= 1120px) {
+  .home-main {
+    top: 25px;
+  }
+  .header-content-logo img {
+    width: 16vh;
+  }
+  .header-contacts-mail, .header-contacts-phone {
+    display: none;
+  }
+  .header-content-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 300px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .show-more {
+    width: 18%;
+    padding: 1.25%;
+    gap: 10px;
+  }
+  .show-more a {
+    height: 6vh;
+    width: 6vh;
+  }
+  .show-more a img {
+    width: 3.5vh;
+  }
+  .show-more-title {
+    font-size: 12px;
+  }
+  .banner-info {
+    max-width: 200px;
+    height: 280px;
+  }
+  .banner-info > span {
+    font-size: 14px;
+    top: 20px;
+    padding-top: 20px;
+  }
+  .home-booking-info button {
+    width: 220px;
+    height: 55px;
+    padding: 10px;
+  }
+  .home-booking-info button span {
+    font-size: 16px;
+  }
+  .home-info {
+    height: 180px;
+    bottom: -80px;
+    padding: 60px 10px 64px 22px;
+  }
+  .home-info-list {
+    gap: 1em;
+  }
+  .home-info-list li {
+    max-width: 170px;
+    font-size: 14px;
+  }
+  .home-info-list span {
+    font-size: 50px;
+  }
+}
+@media (width <= 960px) {
+  .home-main {
+    top: 15px;
+  }
+  .home-titles {
+    gap: 15px;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .home-info {
+    height: 170px;
+    padding: 60px 5px 64px 20px;
+  }
+  .home-info-list {
+    gap: 0.7em;
+  }
+  .home-info-list li {
+    font-size: 12px;
+  }
+  .home-info-list span {
+    font-size: 45px;
+    margin-bottom: 25px;
+  }
+  .home-booking {
+    top: 20px;
+    left: 3%;
+  }
+  .home-booking img {
+    display: none;
+  }
+  .home-booking-info button {
+    width: 200px;
+    height: 50px;
+    padding: 8px;
+  }
+  .home-booking-info button span {
+    font-size: 16px;
+  }
+  .banner-info {
+    max-width: 180px;
+    height: 260px;
+  }
+  .banner-info > span {
+    font-size: 14px;
+    top: 20px;
+    padding-top: 15px;
+  }
+  .home-info {
+    bottom: -60px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

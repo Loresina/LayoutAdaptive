@@ -1,5 +1,5 @@
 $wrap: 1920px;
-$container: 1530px;
+$container: 80.3%;
 $marg: 0 auto;
 $white: #FFF;
 $grey-dark: #010E10;
@@ -61,7 +61,8 @@ h2 {
 .wrapper {
     position: relative;
     top: -3px;
-    left: 5px;
+
+    // left: 5px;
     max-width: $wrap;
     margin: $marg;
   }
@@ -74,6 +75,15 @@ h2 {
 
   // outline: 1px solid purple;
 }
+
+
+// Экраны среднего размера (1680 × 939 - 1680 × 789)
+// @media(max-width: 1680px) {
+//   .container {
+//      outline: 1px solid purple;
+//   }
+// }
+
 
 
 // /* Базовые стили */
