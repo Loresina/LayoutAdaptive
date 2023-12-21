@@ -6,7 +6,7 @@
 
 ### How you can use it
 
-<code>You can follow the link and try to use [Layout Adaptive](https://layout-adaptive-mryd3yclf-loresina.vercel.app/)
+<code>You can follow the link and try to use [Layout Adaptive](https://layout-fluid.vercel.app/)
 </code>
 
 <!-- ### Maintability: -->
