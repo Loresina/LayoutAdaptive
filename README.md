@@ -2,8 +2,6 @@
 
 **Layout Adaptive** is an example of adaptive layout make by me.
 
-**...under development now...**
-
 ### How you can use it
 
 <code>You can follow the link and try to use [Layout Adaptive](https://layout-fluid.vercel.app/)
